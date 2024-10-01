@@ -91,7 +91,7 @@ There are `r a_stations` distinct stations serve the A train and `r ada_a_statio
 
 ```{r}
 mr_trash_wheel = 
-  read_excel("data/202309 Trash Wheel Collection Data.xlsx", range = "A2:N586", sheet = "Mr. Trash Wheel", na = c("NA", "", ".")) |>
+  read_excel("data/202409 Trash Wheel Collection Data.xlsx", range = "A2:N653", sheet = "Mr. Trash Wheel", na = c("NA", "", ".")) |>
   janitor::clean_names() |>
   select(-"dumpster") |>
   mutate(
@@ -103,7 +103,7 @@ mr_trash_wheel =
 
 ```{r}
 prof_trash_wheel = 
-  read_excel("data/202309 Trash Wheel Collection Data.xlsx", range = "A2:M108", sheet = "Professor Trash Wheel", na = c("NA", "", ".")) |>
+  read_excel("data/202409 Trash Wheel Collection Data.xlsx", range = "A2:M120", sheet = "Professor Trash Wheel", na = c("NA", "", ".")) |>
   janitor::clean_names() |>
   select(-"dumpster") |>
   mutate(
@@ -114,7 +114,7 @@ prof_trash_wheel =
 
 ```{r}
 gwynnda_trash_wheel = 
-  read_excel("data/202309 Trash Wheel Collection Data.xlsx", range = "A2:L157", sheet = "Gwynnda Trash Wheel", na = c("NA", "", ".")) |>
+  read_excel("data/202409 Trash Wheel Collection Data.xlsx", range = "A2:L265", sheet = "Gwynnda Trash Wheel", na = c("NA", "", ".")) |>
   janitor::clean_names() |>
   select(-"dumpster") |>
   mutate(
